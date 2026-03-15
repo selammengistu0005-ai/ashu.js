@@ -149,8 +149,8 @@
 
         @keyframes selam-msgFade { from { opacity:0; transform: translateY(10px); } to { opacity:1; transform: translateY(0); } }
 
-        .u-msg { align-self: flex-end; background: var(--selam-primary); color: white; border-bottom-right-radius: 4px; box-shadow: var(--selam-glow); }
-        .b-msg { align-self: flex-start; background: rgba(255,255,255,0.08); color: #efefef; border: 1px solid var(--selam-border); border-bottom-left-radius: 4px; }
+        .u-msg { align-self: flex-end; background: #ffffff; color: #000000; border-bottom-right-radius: 4px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .b-msg { align-self: flex-start; background: #1a1a1c; color: #ffffff; border: 1px solid var(--selam-ash-border); border-bottom-left-radius: 4px; }
 
         /* Input Area */
         .selam-footer {
@@ -299,12 +299,11 @@
             });
             const data = await res.json();
             const loader = document.getElementById(loadId);
-            if(loader) loader.remove();
-            appendMsg('b-msg', data.reply || "I am calibrated and ready. Ask me again.");
-        } catch (err) {
-            const loader = document.getElementById(loadId);
             if(loader) loader.innerText = "System connection lost. Check your backend.";
-        }
+            if(loader) {
+                loader.style.color = "#ff4c4c"; // Red color for the error text
+                loader.innerText = "System connection lost. Check your backend.";
+            }
     }
 
    function appendMsg(type, text, id = '') {
