@@ -299,13 +299,16 @@
             });
             const data = await res.json();
             const loader = document.getElementById(loadId);
-            if(loader) loader.innerText = "System connection lost. Check your backend.";
+            if(loader) loader.remove();
+            appendMsg('b-msg', data.reply || "I am calibrated and ready. Ask me again.");
+        } catch (err) {
+            const loader = document.getElementById(loadId);
             if(loader) {
-                loader.style.color = "#ff4c4c"; // Red color for the error text
+                loader.style.color = "#ff4c4c"; 
                 loader.innerText = "System connection lost. Check your backend.";
             }
+        }
     }
-
    function appendMsg(type, text, id = '') {
     const div = document.createElement('div');
     div.className = `s-msg ${type}`;
@@ -322,7 +325,8 @@
     div.innerHTML = formattedText;
 
     msgs.appendChild(div);
-    msgs.scrollTop = msgs.scrollHeight;}
+    msgs.scrollTop = msgs.scrollHeight;
+   }
     send.onclick = handleSend;
     input.onkeypress = (e) => { if(e.key === 'Enter') handleSend(); };
 })();
