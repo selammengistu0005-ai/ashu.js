@@ -188,7 +188,7 @@
         #selam-send:hover { 
         background: #f0f0f0; 
         transform: translateY(-2px); 
-        }; }
+        }
     `;
     document.head.appendChild(style);
 
