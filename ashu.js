@@ -185,7 +185,10 @@
             justify-content: center;
         }
 
-        #selam-send:hover { background: #8066ff; transform: translateY(-2px); }
+        #selam-send:hover { 
+        background: #f0f0f0; 
+        transform: translateY(-2px); 
+        }; }
     `;
     document.head.appendChild(style);
 
@@ -207,12 +210,20 @@
             <div class="selam-footer">
                 <input type="text" id="selam-input" placeholder="ይጻፉ..." autocomplete="off">
                 <button id="selam-send">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1a1a1c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                    </svg>
                 </button>
             </div>
         </div>
         <div id="selam-launcher">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 11c0-4.97 4.03-9 9-9s9 4.03 9 9"></path>
+            <path d="M21 11v3a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2z"></path>
+            <path d="M7 11v3a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2z"></path>
+            <path d="M21 16v2a2 2 0 0 1-2 2h-5"></path>
+            </svg>
         </div>
     `;
     document.body.appendChild(container);
