@@ -205,7 +205,7 @@
                 <button class="selam-close" id="selam-close-btn">&times;</button>
             </div>
             <div id="selam-messages">
-                <div class="s-msg b-msg">እኔ የሰላም ረዳት ነኝ፤ በምን ልርዳዎት እችላለው ?</div>
+                <div class="s-msg b-msg">እኔ የ አሸናፊ ረዳት ነኝ፤ በምን ልርዳዎት እችላለው ?</div>
             </div>
             <div class="selam-footer">
                 <input type="text" id="selam-input" placeholder="ይጻፉ..." autocomplete="off">
