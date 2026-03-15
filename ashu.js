@@ -292,7 +292,7 @@
         appendMsg('b-msg', '...', loadId);
 
         try {
-            const res = await fetch('https://selam-backend-1biy.onrender.com/api/support', { 
+            const res = await fetch('https://ashu-s-file.onrender.com/api/support', { 
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({ message: text })
