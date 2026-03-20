@@ -3,8 +3,8 @@
     const style = document.createElement('style');
     style.textContent = `
         :root {
-            --selam-primary: #ffffff; /* White for the icon/accents */
-            --selam-ash-dark: #1a1a1c; /* Deep Ash Gray */
+            --selam-primary: #ffffff; 
+            --selam-ash-dark: #1a1a1c; 
             --selam-ash-border: #2d2d30; 
             --selam-glow: 0 8px 24px rgba(0, 0, 0, 0.5);
         }
@@ -12,7 +12,7 @@
         #selam-launcher {
             width: 65px;
             height: 65px;
-            border-radius: 22px; /* Smooth Squircle */
+            border-radius: 22px; 
             background: var(--selam-ash-dark);
             cursor: pointer;
             display: flex;
@@ -54,7 +54,6 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            /* Added this to prevent the container from blocking the whole screen */
             pointer-events: none; 
         }
 
@@ -200,12 +199,12 @@
             <div class="selam-header">
                 <div class="selam-title">
                     <div class="selam-online-dot"></div>
-                    Selam Assistant
+                    አሸናፊ Assistant
                 </div>
                 <button class="selam-close" id="selam-close-btn">&times;</button>
             </div>
             <div id="selam-messages">
-                <div class="s-msg b-msg">እኔ የ አሸናፊ ረዳት ነኝ፤ በምን ልርዳዎት እችላለው ?</div>
+                <div class="s-msg b-msg">እኔ የ አሸናፊ assistant ነኝ፤ በምን ልርዳዎት እችላለው ?</div>
             </div>
             <div class="selam-footer">
                 <input type="text" id="selam-input" placeholder="ይጻፉ..." autocomplete="off">
