@@ -199,7 +199,7 @@
             <div class="selam-header">
                 <div class="selam-title">
                     <div class="selam-online-dot"></div>
-                    አሸናፊ Assistant
+                    የአሸናፊ Assistant AI
                 </div>
                 <button class="selam-close" id="selam-close-btn">&times;</button>
             </div>
